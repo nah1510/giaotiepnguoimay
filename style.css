@@ -1,7 +1,7 @@
 body{
 	min-width:768px;
 }
-.row,.container-fluid,.row,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+.row,.container-fluid,.row,.col-1,.col-2,.col-3,.col-4,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.container {
 	margin:0;
 	padding:0;
 }
@@ -140,7 +140,7 @@ input[type=checkbox]:checked + label {
 	height: 37px;
 	left: 1292px;
 	top: 866px;
-
+	color:white;
 }
 .btn-yellow{
 	
@@ -150,6 +150,17 @@ input[type=checkbox]:checked + label {
 	height: 37px;
 	left: 1292px;
 	top: 866px;
+	color:white;
+}
+.btn-red{
+	
+	background-color:#D9534F;
+	border-radius: 4px;
+	width: 96px;
+	height: 37px;
+	left: 1292px;
+	top: 866px;
+	color:white;
 }
 .list-inline li{
   display: inline;
@@ -187,4 +198,34 @@ input[type=checkbox]:checked + label {
 .time label{
 	margin-left:110px;
 	margin-top:10px;
+}
+table{
+	text-align:center;
+}
+.Yakap{
+	font-family: 'Yakap', arial;
+}
+.status{
+	width:300px;
+}
+.black{
+	background-color:#373A3C;
+	color:white;
+	
+}
+table th{
+	font-weight: 100;
+}
+.div-table{
+	max-width:90%;
+	margin-left:5%;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+.div-yellow{
+	background-color:yellow;
+	height:100px;
+	border: 2px solid yellow;
+	 border-top-left-radius: 50px 50px;
+	 border-top-right-radius: 50px 50px;
 }
