@@ -1,4 +1,4 @@
-
+<html>
 
 <head>
 	<meta charset="utf-8">
@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-grid.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +20,6 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-	<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-	<link type="text/css" rel="stylesheet" href="css/calendarista.debug.css" />
-	<link type="text/css" rel="stylesheet" href="css/calendarista.min.css" />
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -32,22 +30,9 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/moment.min.js"></script>
-		<script type="text/javascript" src="scripts/moment-with-locales.js"></script>
 
-		<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-	  
-		<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
-<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
-	  
-	  <script type="text/javascript" src="scripts/bootstrap-datetimepicker.js"></script>
 
 </head>
-
-
 
 <body>
 
@@ -84,58 +69,56 @@
 			<div class="container">
 				<div class="row">
 						
-					<div class="col-md-7 col-md-push-5 ">
-						<div class="booking-cta">
-							<h1>THUÊ XE</h1>
-							<p>Hoàn tièn 100% nếu chủ xe huỷ chuyến trong 7 ngày trước chuyến đi. Thanh Toán Dễ Dàng, Nhanh Chóng, Tiện Lợi.Trải nghiệm dịch vụ tốt như xe nhà. Chất lượng xe Cao Cấp - Mức giá Hấp Dẫn. Tài xế phục vụ chuyên nghiệp, đảm bảo an toàn suốt chuyến đi.
 
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-md-pull-7">
+					<div class="col-md-12">
 							
 						<div class="booking-form">
 								<div class="row">
-										<h1 class="auto-center"><b>THÔNG TIN</b><img style="width:61px;height:85px;" src="img/ThueXe.PNG"></h1>
+										<h1 class="auto-center"><b>Lịch sử</b></h1>
 								</div>
-							<form action="./step2.html">
-								
-								<div class="form-group">
-									<span class="form-label">Địa điểm</span>
-									<input class="form-control" type="text" placeholder="Địa chỉ đón">
-								</div>
-								<div class="form-group">
-									<span class="form-label">Thời gian</span>
-									<input class="form-control" type="text" id="time" placeholder="Thời gian">
-								</div>
-								<div class="form-group">
-									<span class="form-label">Thông tin thêm</span>
-									<textarea class="form-control" name="message" placeholder="Thông tin thêm"></textarea>
-								</div>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.74873323149!2d106.66657240322701!3d10.811036952777139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e05a278765%3A0x838e81d8f80ac48!2zQ-G6p3UgVsaw4bujdCBOZ3V54buFbiBUaMOhaSBTxqFuLCBQaMaw4budbmcgMywgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1574621732937!5m2!1svi!2s" 
-								width="300" height="200" frameborder="0" style="border:0;    margin-bottom: 30px;" allowfullscreen=""></iframe>
-
-								
-								
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="col-sm-1"></div>
-										<div class="form-btn col-sm-10">
-											<a class="btn btn-warring" style="width: 110px;" href="index.html">Trở về</a>
-										</div>
-										<div class="col-sm-1"></div>
-									</div>
-									<div class="col-sm-6">
-										<div class="col-sm-1"></div>
-										<div class="form-btn col-sm-10">
-											<a class="btn btn-success" style="width: 110px;" href="step3.html">Đặt xe</a>
-										</div>
-										<div class="col-sm-1"></div>
-									</div>
-								</div>
-
-
-							</form>
+		<table class="table">
+		  <thead class="black">
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">ID</th>
+			  <th scope="col">Tài xế</th>
+			  <th scope="col">Trạng thái</th>
+			  <th scope="col">Ngày</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>0123456798</td>
+			  <td class="Yakap">Otto</td>
+			  <td><a href="step2.html" class="auto-center"><button style="width: 110px;" class="btn-table btn-blue ">Hoàn thành</button></a></td>
+			  <td>15 Sep, 8:56 AM </td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>0123456798</td>
+			  <td class="Yakap">Thornton</td>
+			  <td><a href="step2.html" class="auto-center"><button style="width: 110px;" class="btn-blue ">Hoàn thành</button></a></td>
+			  <td>15 Sep, 8:56 AM</td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>0123456798</td>
+			  <td class="Yakap">the Bird</td>
+			  <td class="status">
+			  <div class="row margin0" >
+					<div class="col-6 margin0">
+						<a href="step2.html" class="auto-center"><button class="btn-yellow ">Sửa</button></a>
+					</div>
+					<div class="col-6 margin0">
+						<a href="step2.html" class="auto-center"><button class="btn-red ">Hủy</button></a>
+					</div>
+				</div>
+			</td>
+			<td>20 Sep, 8:56 AM</td>
+			</tr>
+		  </tbody>
+		</table>
 						</div>
 
 					</div>
@@ -250,20 +233,5 @@
 	</footer>
 </body>
 
-										
-<script type="text/javascript">
-    (function($) {
-        jQuery(document).ready(function($){
-			var timepicker = new TimePicker('time', {
-  lang: 'en',
-  theme: 'dark'
-});
-timepicker.on('change', function(evt) {
-  
-  var value = (evt.hour || '00') + ':' + (evt.minute || '00');
-  evt.element.value = value;
 
-});
-        });
-    })(jQuery);
-										</script>
+</html>
