@@ -315,7 +315,15 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 transition: all 250ms ease-in-out 0s;
 
 }
-
 .margin0{
 	margin:0!important;
+}
+.list-result{
+	border:2px solid black;
+}
+.result{
+	background-color:#dcdcdc;
+	padding:10px 0;
+	margin:10px!important;
+	width:auto;
 }
