@@ -29,7 +29,9 @@ body{
 
 }
 .auto-center{
-	margin:auto;
+	margin-right: auto!important;
+    margin-left: auto!important;
+	float: none!important;
 }
 .main{
 	float:right;
@@ -326,4 +328,11 @@ transition: all 250ms ease-in-out 0s;
 	padding:10px 0;
 	margin:10px!important;
 	width:auto;
+}
+.border-yellow{
+	border: 2px solid yellow;
+	padding-right: 0!important;
+    padding-left: 0!important;
+	margin-top:10px;
+
 }
