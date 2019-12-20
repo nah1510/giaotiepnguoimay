@@ -28,6 +28,10 @@ body{
   	min-height:700px;
 
 }
+.margin-center{
+	margin-right: auto;
+    margin-left: auto;
+}
 .auto-center{
 	margin-right: auto!important;
     margin-left: auto!important;
