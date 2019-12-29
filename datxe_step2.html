@@ -1,4 +1,4 @@
-<html>
+
 
 <head>
 	<meta charset="utf-8">
@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bootstrap-grid.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +19,9 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/calendarista.debug.css" />
+	<link type="text/css" rel="stylesheet" href="css/calendarista.min.css" />
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -30,9 +32,22 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/moment.min.js"></script>
+		<script type="text/javascript" src="scripts/moment-with-locales.js"></script>
 
+		<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	  
+		<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+	  
+	  <script type="text/javascript" src="scripts/bootstrap-datetimepicker.js"></script>
 
 </head>
+
+
 
 <body>
 
@@ -81,66 +96,46 @@
 							
 						<div class="booking-form">
 								<div class="row">
-										<h1 class="auto-center"><b>THUÊ XE</b><img style="width:61px;height:85px;" src="img/ThueXe.PNG"></h1>
+										<h1 class="auto-center"><b>THÔNG TIN</b><img style="width:61px;height:85px;" src="img/ThueXe.PNG"></h1>
 								</div>
-							<form action="./step2.html">
+							<form action="./datxe_step3.html">
 								
 								<div class="form-group">
-									<span class="form-label">Người sử dụng</span>
-									<input class="form-control" type="text" placeholder="Họ và tên">
+									<span class="form-label">Địa điểm đón</span>
+									<input class="form-control" type="text" placeholder="Địa chỉ đón">
 								</div>
 								<div class="form-group">
-									<span class="form-label">Số điện thoại</span>
-									<input type="tel" class="form-control" placeholder="Số điện thoại">
+									<span class="form-label">Địa điểm đến</span>
+									<input class="form-control" type="text" placeholder="Địa chỉ đến">
 								</div>
 								<div class="form-group">
-									<span class="form-label">Số lượng</span>
-									<input type="number" class="form-control" placeholder="Số lượng" min="1">
+									<span class="form-label">Thời gian</span>
+									<input class="form-control" type="text" id="time" placeholder="Thời gian">
 								</div>
-								<div class="row">
-									<div class="col-sm-2"></div>
-									<div class="col-sm-3">
-										<div class="form-group">
-											<input type="checkbox" class="custom-control-input" id="customCheck"
-												name="example1">
-											<label class="custom-control-label" for="customCheck">5 chỗ</label>
-										</div>
-									</div>
-									<div class="col-sm-2"></div>
-									<div class="col-sm-3">
-										<div class="form-group">
-											<input type="checkbox" class="custom-control-input" id="customCheck"
-												name="example1">
-											<label class="custom-control-label" for="customCheck">7 chỗ</label>
-										</div>
-									</div>
-									<div class="col-sm-2"></div>
+								<div class="form-group">
+									<span class="form-label">Thông tin thêm</span>
+									<textarea class="form-control" name="message" placeholder="Thông tin thêm"></textarea>
 								</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.74873323149!2d106.66657240322701!3d10.811036952777139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e05a278765%3A0x838e81d8f80ac48!2zQ-G6p3UgVsaw4bujdCBOZ3V54buFbiBUaMOhaSBTxqFuLCBQaMaw4budbmcgMywgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1574621732937!5m2!1svi!2s" 
+								width="300" height="200" frameborder="0" style="border:0;    margin-bottom: 30px;" allowfullscreen=""></iframe>
+
+								
+								
 								<div class="row">
-									<div class="col-sm-2"></div>
-									<div class="col-sm-3">
-										<div class="form-group">
-											<input type="checkbox" class="custom-control-input" id="customCheck"
-												name="example1">
-											<label class="custom-control-label" for="customCheck">16 chỗ</label>
+									<div class="col-sm-6">
+										<div class="col-sm-1"></div>
+										<div class="form-btn col-sm-10">
+											<a class="btn btn-warring" style="width: 110px;" href="index.html">Trở về</a>
 										</div>
+										<div class="col-sm-1"></div>
 									</div>
-									<div class="col-sm-2"></div>
-									<div class="col-sm-3">
-										<div class="form-group">
-											<input type="checkbox" class="custom-control-input" id="customCheck"
-												name="example1">
-											<label class="custom-control-label" for="customCheck">29 chỗ</label>
+									<div class="col-sm-6">
+										<div class="col-sm-1"></div>
+										<div class="form-btn col-sm-10">
+											<a class="btn btn-success" style="width: 110px;" href="datxe_step3.html">Kế tiếp</a>
 										</div>
+										<div class="col-sm-1"></div>
 									</div>
-									<div class="col-sm-2"></div>
-								</div>
-								<div class="row">
-									<div class="col-sm-3"></div>
-									<div class="form-btn col-sm-6">
-										<button class="btn btn-success" style="width: 140px;">Bước kế tiếp!</button>
-									</div>
-									<div class="col-sm-3"></div>
 								</div>
 
 
@@ -259,5 +254,20 @@
 	</footer>
 </body>
 
+										
+<script type="text/javascript">
+    (function($) {
+        jQuery(document).ready(function($){
+			var timepicker = new TimePicker('time', {
+  lang: 'en',
+  theme: 'dark'
+});
+timepicker.on('change', function(evt) {
+  
+  var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+  evt.element.value = value;
 
-</html>
+});
+        });
+    })(jQuery);
+										</script>

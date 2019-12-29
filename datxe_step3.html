@@ -1,4 +1,4 @@
-<html>
+
 
 <head>
 	<meta charset="utf-8">
@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bootstrap-grid.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +19,9 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/calendarista.debug.css" />
+	<link type="text/css" rel="stylesheet" href="css/calendarista.min.css" />
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -30,9 +32,22 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/moment.min.js"></script>
+		<script type="text/javascript" src="scripts/moment-with-locales.js"></script>
 
+		<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	  
+		<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+	  
+	  <script type="text/javascript" src="scripts/bootstrap-datetimepicker.js"></script>
 
 </head>
+
+
 
 <body>
 
@@ -80,48 +95,41 @@
 					<div class="col-md-4 col-md-pull-7">
 							
 						<div class="booking-form">
-							<div class="row item-center" style="margin-left: 0px;">
-								<img class="circle auto-center" style="margin-top: -20px;" height="100" src="img/anh.jpg" alt="Smiley face" >
-							</div>
-							<form action="./step2.html">
+								<div class="row">
+										<h1 class="auto-center"><b>THÔNG TIN</b><img style="width:61px;height:85px;" src="img/ThueXe.PNG"></h1>
+								</div>
+							<form action="./datxe_step4.html">
 								
 								<div class="form-group">
-									<span class="form-label">Tên tài xế</span>
-									<input class="form-control" disabled="disabled" type="text" placeholder="Nguyễn Văn A">
+									<span class="form-label">Khoảng cách</span>
+									<input class="form-control" type="text" placeholder="8km" disabled="disabled">
 								</div>
 								<div class="form-group">
-									<span class="form-label">Số điện thoại</span>
-									<input class="form-control" disabled="disabled" type="text" placeholder="0123456789">
+									<span class="form-label">Giá cước</span>
+									<input class="form-control" type="text" placeholder="80.000 vnd" disabled="disabled">
 								</div>
-								<div class="form-group">
-									<span class="form-label">Loại xe</span>
-									<input class="form-control" disabled="disabled" type="text" placeholder="Mercedes-Benz C 200">
+								<div class="col-3">
+									<img src="img/GrabMap.png" height="155" style="margin-top: 5px; margin-bottom: 40px;">
 								</div>
-								<div class="form-group">
-									<span class="form-label">Màu</span>
-									<input class="form-control" disabled="disabled" type="text" placeholder="Đen">
-								</div>
-								<div class="form-group">
-									<span class="form-label">Biển số</span>
-									<input class="form-control" disabled="disabled" type="text" placeholder="81A-7777">
-								</div>
-
+								
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="col-sm-1"></div>
 										<div class="form-btn col-sm-10">
-											<a class="btn btn-warring" style="width: 110px;" href="index.html">Hủy cuốc</a>
+											<a class="btn btn-warring" style="width: 110px;" href="index.html">Trở về</a>
 										</div>
 										<div class="col-sm-1"></div>
 									</div>
 									<div class="col-sm-6">
 										<div class="col-sm-1"></div>
 										<div class="form-btn col-sm-10">
-											<a class="btn btn-success" style="width: 110px;" href="history.html">Hoành Thành</a>
+											<a class="btn btn-success" style="width: 110px;" href="datxe_step4.html">Đặt xe</a>
 										</div>
 										<div class="col-sm-1"></div>
 									</div>
 								</div>
+
+
 							</form>
 						</div>
 
@@ -135,7 +143,6 @@
 		<div class="main-footer widgets-dark typo-light">
 			<div class="container">
 				<div class="row">
-
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="widget subscribe no-box">
 								<h5 class="widget-title">TOP HOMESTAY ĐƯỢC YÊU THÍCH<span></span></h5>
@@ -236,6 +243,3 @@
 		
 	</footer>
 </body>
-
-
-</html>
