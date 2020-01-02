@@ -72,7 +72,7 @@
 					<div class="s002">
 						<form>
 							<fieldset>
-								<legend>SEARCH HOTEL</legend>
+								<legend>TÌM KIẾM</legend>
 							</fieldset>
 							<div class="inner-form">
 								<div class="input-field first-wrap">
@@ -84,7 +84,7 @@
 											</path>
 										</svg>
 									</div>
-									<input id="search" type="text" placeholder="What are you looking for?" />
+									<input id="search" type="text" placeholder="TỪ KHÓA" />
 								</div>
 								<div class="input-field second-wrap">
 									<div class="icon-wrap">
@@ -117,16 +117,19 @@
 											</path>
 										</svg>
 									</div>
-									<select data-trigger="" name="choices-single-defaul">
+									<select name="choices-single-defaul" style="padding: 25px; width: 170px;"
+										onchange="if(this.options[this.selectedIndex].value=='customOption'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
 										<option placeholder="">2 Adults</option>
-										<option>3 Adults</option>
-										<option>4 Adults</option>
-										<option>5 Adults</option>
-									</select>
+										<option>3 người</option>
+										<option>4 người</option>
+										<option>5 người</option>
+										<option value="customOption">Khác</option>
+									</select><input name="browser" style="display:none;" disabled="disabled"
+										onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
 								</div>
-								<div class="input-field fifth-wrap">
-									<button class="btn-search" type="button">SEARCH</button>
-								</div>
+								<div class="input-field fifth-wrap">               
+									<button class="btn-search">TÌM KIẾM</button>
+								  </div>
 							</div>
 						</form>
 					</div>
@@ -134,129 +137,244 @@
 			</div>
 		</div>
 	</div>
-		<section class="section bg-light post">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
+	<section class="section bg-light post">
+		<div class="row">
+			<div class="col-md-2 ">
+				<button class="btn site" style="font-size:20px">Khu vực</button>
+				<div id="content" class="content" style="display: none;">
+					<div class="booking-form" style="margin-top: 10px; padding:10px !important">
 						<div class="row">
-							<div class="col-md-6">
-								<div class="media media-custom d-block mb-4">
-									<a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
-											class="img-fluid"></a>
-									<div class="media-body">
-										<span class="meta-post">February 26, 2018</span>
-										<h2 class="mt-0 mb-3"><a href="#">Drinks and Foods At Your Door</a></h2>
-									</div>
-								</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+									<label class="custom-control-label" for="customCheck">Nội thành</label>	
 							</div>
-							<div class="col-md-6">
-								<div class="media media-custom d-block mb-4">
-									<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
-											class="img-fluid"></a>
-									<div class="media-body">
-										<span class="meta-post">February 26, 2018</span>
-										<h2 class="mt-0 mb-3"><a href="#">Five Reasons to Stay at Villa Resort</a></h2>
-									</div>
-								</div>
-							</div>
-
-
-							<div class="col-md-6">
-								<div class="media media-custom d-block mb-4">
-									<a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
-											class="img-fluid"></a>
-									<div class="media-body">
-										<span class="meta-post">February 26, 2018</span>
-										<h2 class="mt-0 mb-3"><a href="#">Drinks and Foods At Your Door</a></h2>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="media media-custom d-block mb-4">
-									<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
-											class="img-fluid"></a>
-									<div class="media-body">
-										<span class="meta-post">February 26, 2018</span>
-										<h2 class="mt-0 mb-3"><a href="#">Five Reasons to Stay at Villa Resort</a></h2>
-									</div>
-								</div>
-							</div>
+							
 						</div>
-
 						<div class="row">
-							<div class="col-md-12">
-								<nav role="navigation">
-									<ul class="pagination custom-pagination pagination-lg">
-										<li class="page-item active">
-											<a class="page-link" href="#">1</a>
-										</li>
-										<li class="page-item ">
-											<a class="page-link " href="#">2</a>
-										</li>
-										<li class="page-item ">
-											<a class="page-link" href="#">3</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-					<!-- END content -->
-					<div class="col-md-4">
-						<div class="row">
-
-							<div class="col-md-11 ml-auto">
-
-
-								<form action="#" class="sidebar-search">
-									<div class="form-group">
-										<span class="fa fa-search icon-search"></span>
-										<input type="text" class="form-control search-input" placeholder="Search...">
-									</div>
-								</form>
-
-								<div class="side-box">
-									<h2 class="heading">Popular Post</h2>
-									<ul class="post-list list-unstyled">
-										<li>
-											<a href="#" class="d-flex">
-												<span class="mr-3 image"><img src="img/img_1.jpg"
-														alt="Image placeholder" class="img-fluid"></span>
-												<div>
-													<span class="meta">February 27, 2018</span>
-													<h3>Five Reasons to Stay at Villa Resort</h3>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex">
-												<span class="mr-3 image"><img src="img/img_2.jpg"
-														alt="Image placeholder" class="img-fluid"></span>
-												<div>
-													<span class="meta">February 27, 2018</span>
-													<h3>Five Reasons to Stay at Villa Resort</h3>
-												</div>
-											</a>
-										</li>
-
-										<li>
-											<a href="#" class="d-flex">
-												<span class="mr-3 image"><img src="img/img_1.jpg"
-														alt="Image placeholder" class="img-fluid"></span>
-												<div>
-													<span class="meta">February 27, 2018</span>
-													<h3>Five Reasons to Stay at Villa Resort</h3>
-												</div>
-											</a>
-										</li>
-									</ul>
-								</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck"
+										name="example1">
+									<label class="custom-control-label" for="customCheck">Ngoại thành</label>		
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="col-md-2">
+				<button class="btn price-btn" style="font-size:20px">Giá chỗ ở</button>
+				<div id="price" class="price" style="display: none;">
+					<div class="booking-form" style="margin-top: 10px; padding:10px !important">
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+									<label class="custom-control-label" for="customCheck">Nội thành</label>	
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck"
+										name="example1">
+									<label class="custom-control-label" for="customCheck">Ngoại thành</label>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<button class="btn more-btn" style="font-size:20px">Thêm bộ lọc</button>
+				<div id="more" class="more" style="display: none;">
+					<div class="booking-form" style="margin-top: 10px; padding:10px !important">
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+									<label class="custom-control-label" for="customCheck">Nội thành</label>	
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10 checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck"
+										name="example1">
+									<label class="custom-control-label" for="customCheck">Ngoại thành</label>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Hiện có <b>10/29</b> chỗ tại Nha Trang</h3>
+			</div>
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4 row">
+				<div class="col-md-3" style="padding-top: 10px;">
+					Sắp xếp
+				</div>
+				<div class="col-md-9">
+					<select data-trigger="">
+						<option>Giá tăng dần</option>
+						<option>Giá giảm dần</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">City Home Nha Trang</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Biệt thự nhìn biển</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_1.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Homestay garden vila</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Yến Vàng Nha Trang</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Ocean BayView</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">LUX HOUSE</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Marine Home</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Ta'or Homestay</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="media media-custom d-block mb-4">
+						<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" alt="Image placeholder"
+								class="img-fluid"></a>
+						<div class="media-body">
+							<span class="meta-post">February 26, 2018</span>
+							<h2 class="mt-0 mb-3"><a href="#">Central Holiday Apartment</a></h2>
+							<div>6 khách · 2 phòng ngủ · 2 phòng tắm</div>
+							<div>899,100₫/đêm</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<nav role="navigation">
+						<ul class="pagination custom-pagination pagination-lg">
+							<li class="page-item active">
+								<a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link " href="#">2</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="#">3</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="#">4</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="#">5</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="#">6</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="#">7</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</section>
 	</div>
 	<footer id="footer" class="footer-1">
 		<div class="main-footer widgets-dark typo-light">
@@ -364,6 +482,7 @@
 </body>
 <script src="js/extention/choices.js"></script>
 <script src="js/extention/flatpickr.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 	flatpickr(".datepicker",
 		{});
@@ -376,6 +495,51 @@
 			itemSelectText: '',
 		});
 
+</script>
+<script>
+	function toggleField(hideObj, showObj) {
+		hideObj.disabled = true;
+		hideObj.style.display = 'none';
+		showObj.disabled = false;
+		showObj.style.display = 'inline';
+		showObj.focus();
+	}
+	$(".site").click(function () {
+		if (document.getElementById("content").style.display === 'none') {
+			$(".content").css("display", "block");
+			$(".price").css("display", "none");
+			$(".more").css("display", "none");
+			return;
+		}
+		if (document.getElementById("content").style.display === 'block') {
+			$(".content").css("display", "none");
+			return;
+		}
+	})
+	$(".price-btn").click(function () {
+		if (document.getElementById("price").style.display === 'none') {
+			$(".price").css("display", "block");
+			$(".content").css("display", "none");
+			$(".more").css("display", "none");
+			return;
+		}
+		if (document.getElementById("price").style.display === 'block') {
+			$(".price").css("display", "none");
+			return;
+		}
+	})
+	$(".more-btn").click(function () {
+		if (document.getElementById("more").style.display === 'none') {
+			$(".more").css("display", "block");
+			$(".content").css("display", "none");
+			$(".price").css("display", "none");
+			return;
+		}
+		if (document.getElementById("more").style.display === 'block') {
+			$(".more").css("display", "none");
+			return;
+		}
+	})
 </script>
 
 </html>
