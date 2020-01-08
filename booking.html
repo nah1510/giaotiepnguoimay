@@ -11,13 +11,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/node_modules/readmore-js/readmore.min.js"></script>
+
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<title>Booking Form HTML Template</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
@@ -32,12 +33,17 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="colorlib.com">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:0px;">
+	<nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom:0px;">
 		<div class="col-2">
 			<img src="img/HomeStayIconSmall.PNG" height="40" width="100">
 		</div>
@@ -61,32 +67,176 @@
 				<img src="img/crown.png" height="13"> <label>Premium </label>
 			</div>
 		</div>
-
-
-
 	</nav>
-	<div class="container-fluid body">
-		<div class="section-center" style="margin: 80px;">
-			<div class="container">
-			<h1 class="margin-center">Tìm kiếm</h1>
+	<section class="section bg-light post">
+		<div class="container">
 			<div class="row">
-				<div class="span-search item-center"><i class="fa fa-search"></i></div>
-				<input class="input-search" type="text" placeholder="Nhập địa điểm và tên khách sạn">
-			</div>
-			<div class="row">
-				<span class="bage">Hà Nội</span>
-				 <span class="bage">Nha Trang</span>
-				  <span class="bage">Hồ Chí Minh</span> 
-				  <span class="bage">Sài Gòn April</span>
-				  <span class="bage">MS.Yand</span>
-			</div>
-			<div class="group-item-search">
+				<div class="col-md-8">
+					<div class="d-block mb-4">
+						<div class="media-body">
+							<h2 class="mt-0 mb-3"><b style="color: black;">Thông tin đặt chỗ</b></h2>
+							<div style="font-weight: bold; color: black"><span style="color:red">*</span> Số khách</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="media media-custom d-block mb-4">
+									<div class="media-body">
+										<div style="color: black;">1 khách</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-			</div>
-			</div>
+						<div class="media-body">
+							<div style="font-weight: bold; color: black; ">Thời gian nhận/ trả phòng</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="media media-custom d-block mb-4">
+									<div class="media-body">
+										<div class="row" style="padding-top:10px">
+											<div class="border-top "
+												style=" border-color: #5CB85C !important; border-width: 5px !important;">
+												Nhận phòng</div>
+										</div>
+										<div class="row">
+											<div style="font-size: 25px; color:black">05/01/2020</div>
+										</div>
+										<div class="row">
+											<span>Chủ nhật</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="media media-custom d-block mb-4">
+									<div class="media-body">
+										<div class="row" style="padding-top:10px">
+											<div class="border-top "
+												style=" border-color: #FF8D1E !important; border-width: 5px !important;">
+												Trả phòng</div>
+										</div>
+										<div class="row">
+											<div style="font-size: 25px; color:black">06/01/2020</div>
+										</div>
+										<div class="row">
+											<span>Thứ hai</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3>Trách nhiệm vật chất</h3>
+							<div>
+								Khách hàng chịu mọi trách nhiệm thiệt hại về tài sản đã gây ra tại chỗ ở trong thời gian
+								lưu trú.
+							</div>
+
+						</div>
+					</div>
+					<div>
+						<h3>Nội quy chỗ ở</h3>
+						<div>
+							- Check-in và check-out đúng thời gian quy định - Chỉ mở phòng theo số lượng người đặt
+							(Ví dụ: 8 người mở 2 phòng lớn 4 giường). - Nhận phòng sớm (hoặc trả phòng muộn): Trước
+							(sau) 3 giờ tính giá phòng nửa ngày, trước (sau) 6 giờ tính tiền một ngày. - Đi đúng số
+							lượng người đặt thực tế. Các trường hợp phát sinh thêm tính phụ thu 200.000 đồng/ người.
+						</div>
+					</div>
+					<div class="media-body" style="padding-top:50px;">
+						<h2 class="mt-0 mb-3"><b style="color: black;">Thông tin của bạn</b></h2>
+						<span style="font-weight: bold; color: black"><span style="color:red">*</span> Tên Khách
+							hàng</span></br>
+						<span style="font-size: 13px;">Họ tên trên CMND/Thẻ căn cước</span>
+						<div class="form-group col-md-10"
+							style="padding-top: 15px; padding-bottom: 15px; padding-left: 0px !important;">
+							<input class="form-control" type="text" placeholder="Họ và tên">
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<span style="font-weight: bold; color: black"><span style="color:red">*</span> Số điện
+									thoại</span></br>
+								<span style="font-size: 13px;">Mã điện thoại quốc gia</span>
+								<div style="padding-top: 15px; padding-bottom: 15px;">
+									<input class="form-control" type="tel" name="phone" placeholder="Số điện thoại">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<span style="font-weight: bold; color: black"><span style="color:red">*</span>
+									Email</span></br>
+								<span style="font-size: 13px;">VD: email@example.com</span>
+								<div style="padding-top: 15px; padding-bottom: 15px;">
+									<input class="form-control" type="email">
+								</div>
+							</div>
+						</div>
+						<div class="media-body" style="padding-top:50px;">
+							<h2 class="mt-0 mb-3"><b style="color: black;">Mã khuyến mãi</b></h2>
+							<div class="form-group col-md-10"
+								style="padding-top: 15px; padding-bottom: 15px; padding-left: 0px !important;">
+								<input class="form-control" type="text" placeholder="Nhập mã khuyến mãi">
+							</div>
+						</div>
+						<div>
+							<button class="btn" style="background-color:#FF8D1E; width:200px; font-size: 20px;">Thanh toán!</button>
+						</div>
+						
+					</div>
+				</div>
+				
+
+
+		<div class="col-md-4">
+			<h2 class="mt-0 mb-3"><b style="color: black;">Chi tiết đặt phòng</b></h2>
+			<form>
+				<div class="media media-custom d-block mb-4">
+					<div class="row" style="padding-top:20px">
+						
+						<div class="col-sm-8" style="padding-left: 35px;">
+							City Home Nha Trang
+						</div>
+						<div class="col-sm-4">
+							<a href="#" class="mb-4 d-block"><img src="img/img_2.jpg" style="width:100px"></a>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div  style="padding-left: 35px;">
+							<img src="img/calander.png" height="20">
+							<span style="font-weight: bold; color:black;">1 đêm -</span><span> 05/01/2020 - 06//2020 </span>
+						</div>					
+					</div>
+					<div class="row">
+						<div  style="padding-left: 35px;">
+							<img src="img/user.png" height="20">
+							<span style="font-weight: bold; color:black;">1 người lớn</span>
+						</div>					
+					</div>
+					<div class="row">
+						<table class="table table-striped" style="margin-top:20px;margin-left: 30px;">
+							<tbody>
+								<tr>
+									<td style="text-align:left;">Giá thuê 1 ngày</td>
+									<td style="text-align:right;">1.890.000 vnd</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; font-weight: bold;">Tổng tiền</td>
+									<td style="text-align:right; font-weight: bold;">1.890.000 vnd</td>
+								</tr>
+							</tbody>
+						</table>				
+					</div>
+					
+			</form>
 		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</section>
 	</div>
-
 	<footer id="footer" class="footer-1">
 		<div class="main-footer widgets-dark typo-light">
 			<div class="container">
@@ -94,7 +244,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="widget subscribe no-box">
-								<h5 class="widget-title">TOP HOMESTAY ĐƯỢC YÊU THÍCH<span></span></h5>
+							<h5 class="widget-title">TOP HOMESTAY ĐƯỢC YÊU THÍCH<span></span></h5>
 							<ul class="thumbnail-widget">
 								<li class="">
 									<a href="" class="">Homestay Đà Lạt</a>
@@ -189,69 +339,181 @@
 			</div>
 		</div>
 
-		
 	</footer>
 </body>
+<script src="js/extention/choices.js"></script>
+<script src="js/extention/flatpickr.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+	flatpickr(".datepicker",
+		{});
 
+</script>
+<script>
+	const choices = new Choices('[data-trigger]',
+		{
+			searchEnabled: false,
+			itemSelectText: '',
+		});
+
+</script>
+<script>
+	function toggleField(hideObj, showObj) {
+		hideObj.disabled = true;
+		hideObj.style.display = 'none';
+		showObj.disabled = false;
+		showObj.style.display = 'inline';
+		showObj.focus();
+	}
+</script>
+<script>
+
+	/**
+	 *  Read More JS
+	 *  truncates text via specfied character length with more/less actions.
+	 *  Maintains original format of pre truncated text.
+	 *  @author stephen scaff
+	 *  @todo   Add destroy method for ajaxed content support.
+	 *
+	 */
+	const ReadMore = (() => {
+		let s;
+
+		return {
+
+			settings() {
+				return {
+					content: document.querySelectorAll('.js-read-more'),
+					originalContentArr: [],
+					truncatedContentArr: [],
+					moreLink: "Xem thêm...",
+					lessLink: "Thu gọn...",
+				}
+			},
+
+			init() {
+				s = this.settings();
+				this.bindEvents();
+			},
+
+			bindEvents() {
+				ReadMore.truncateText();
+			},
+
+			/**
+			 * Count Words
+			 * Helper to handle word count.
+			 * @param {string} str - Target content string.
+			 */
+			countWords(str) {
+				return str.split(/\s+/).length;
+			},
+
+			/**
+			 * Ellpise Content
+			 * @param {string} str - content string.
+			 * @param {number} wordsNum - Number of words to show before truncation.
+			 */
+			ellipseContent(str, wordsNum) {
+				return str.split(/\s+/).slice(0, wordsNum).join(' ') + '...';
+			},
+
+			/**
+			 * Truncate Text
+			 * Truncate and ellipses contented content
+			 * based on specified word count.
+			 * Calls createLink() and handleClick() methods.
+			 */
+			truncateText() {
+
+				for (let i = 0; i < s.content.length; i++) {
+					//console.log(s.content)
+					const originalContent = s.content[i].innerHTML;
+					const numberOfWords = s.content[i].dataset.rmWords;
+					const truncateContent = ReadMore.ellipseContent(originalContent, numberOfWords);
+					const originalContentWords = ReadMore.countWords(originalContent);
+
+					s.originalContentArr.push(originalContent);
+					s.truncatedContentArr.push(truncateContent);
+
+					if (numberOfWords < originalContentWords) {
+						s.content[i].innerHTML = s.truncatedContentArr[i];
+						let self = i;
+						ReadMore.createLink(self)
+					}
+				}
+				ReadMore.handleClick(s.content);
+			},
+
+			/**
+			 * Create Link
+			 * Creates and Inserts Read More Link
+			 * @param {number} index - index reference of looped item
+			 */
+			createLink(index) {
+				const linkWrap = document.createElement('span');
+
+				linkWrap.className = 'read-more__link-wrap';
+
+				linkWrap.innerHTML = `<a id="read-more_${index}"
+                                class="read-more__link"
+                                style="cursor:pointer;">
+                                ${s.moreLink}
+                            </a>`;
+
+				// Inset created link
+				s.content[index].parentNode.insertBefore(linkWrap, s.content[index].nextSibling);
+
+			},
+
+			/**
+			 * Handle Click
+			 * Toggle Click eve
+			 */
+			handleClick(el) {
+				const readMoreLink = document.querySelectorAll('.read-more__link');
+
+				for (let j = 0, l = readMoreLink.length; j < l; j++) {
+
+					readMoreLink[j].addEventListener('click', function () {
+
+						const moreLinkID = this.getAttribute('id');
+						let index = moreLinkID.split('_')[1];
+
+						el[index].classList.toggle('is-expanded');
+
+						if (this.dataset.clicked !== 'true') {
+							el[index].innerHTML = s.originalContentArr[index];
+							this.innerHTML = s.lessLink;
+							this.dataset.clicked = true;
+						} else {
+							el[index].innerHTML = s.truncatedContentArr[index];
+							this.innerHTML = s.moreLink;
+							this.dataset.clicked = false;
+						}
+					});
+				}
+			},
+
+			/**
+			 * Open All
+			 * Method to expand all instances on the page.
+			 * Will probably be useful with a destroy method.
+			 */
+			openAll() {
+				const instances = document.querySelectorAll('.read-more__link');
+				for (let i = 0; i < instances.length; i++) {
+					content[i].innerHTML = s.truncatedContentArr[i];
+					instances[i].innerHTML = s.moreLink;
+				}
+			}
+		}
+	})();
+
+
+	//export default ReadMore;
+
+	ReadMore.init();
+</script>
 
 </html>
-<style type="text/css">
-.bage{
-	border: 2px solid white;
-    border-radius: 10px;
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 27px;
-text-align: center;
-height: 29px;
-color: #FFFFFF;
-margin-right: 10px;
-margin-top: 10px;
-padding: 0 10;
-}
-.container{
-	width: 800px!important;
-}
-.input-search{
-	width: 600px;
-height: 98px;
-left: 199px;
-top: 295px;
-font-size: 20px;
-background: #FFFFFF;
-opacity: 0.9;
-border-radius: 0px 999px 999px 0px;
-text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-}
-.span-search{
-width: 98px;
-height: 98px;
-left: 101px;
-top: 295px;
-
-background: #000000;
-opacity: 0.8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 9999px 0px 0px 9999px;
-}
-.span-search i{
-	margin-top: 35px;
-    font-size: 30px;
-    color: white;
-}
-h1{
-	font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 110px;
-line-height: 129px;
-text-align: center;
-
-color: #FFFFFF;
-}
-</style>
